@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
 import MobileMenu from './MobileMenu'
-import { MenuItem } from '../interfaces/MenuItem'
+import { MenuItem } from '../interfaces/menu-item'
 import DesktopMenu from './DesktopMenu'
 
 type Props = {

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { MenuItem } from '../interfaces/MenuItem'
+import { MenuItem } from '../interfaces/menu-item'
 import Link from 'next/link'
 
 type Props = {

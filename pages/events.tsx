@@ -8,7 +8,7 @@ const events: object[] = [
 
 const EventsPage = () => (
   <Layout title="Events | Next.js + TypeScript Example">
-    <div className="max-w-xl bg-white mx-auto px-16 py-12 rounded-xl">
+    <div className="max-w-md bg-white mx-auto px-16 py-12 rounded-xl">
         <h2 className="font-bold text-xl mb-10">Event this week</h2>
         <ul className="mb-10">
         {events.map((event) => (

@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
+import { Event } from '../interfaces/event'
 
-const events: object[] = [
+const events: Event[] = [
     { id: 1, date: new Date(2021, 4, 4, 17, 23, 42, 11), title: 'Designing Beautiful Interfaces' },
     { id: 2, date: new Date(2021, 5, 4, 17, 23, 42, 11), title: 'Designing for Accessibility' },
     { id: 3, date: new Date(2021, 6, 4, 17, 23, 42, 11), title: 'Designing for People' },

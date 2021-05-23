@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useState } from 'react'
 import Head from 'next/head'
 import MobileMenu from './MobileMenu'
 import { MenuItem } from '../interfaces/menu-item'
@@ -17,8 +17,10 @@ const menuItems: MenuItem[] = [
 
 const currentDate: Date = new Date;
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => (
-  <div>
+const Layout = ({ children, title = 'Next.JS & Tailwind CSS Playground' }: Props) => {
+  const [open, setOpen] = useState(false);
+
+  return <div>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -29,9 +31,9 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <div className="max-w-7xl mx-auto">
         <div className="relative pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
           <div>
-            <DesktopMenu items={ menuItems } />
+            <DesktopMenu items={menuItems} open={open} setOpen={setOpen} />
 
-            <MobileMenu items={ menuItems } />
+            <MobileMenu items={menuItems} open={open} setOpen={setOpen} />
           </div>
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -44,9 +46,9 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       </div> */}
     </div>
     <footer className="text-center text-gray-500">
-      <span>{ currentDate.toLocaleDateString() }</span>
+      <span>{currentDate.toLocaleDateString()}</span>
     </footer>
   </div>
-)
+}
 
 export default Layout

@@ -1,5 +1,5 @@
 import { Event } from '../interfaces/event'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 
 const events: Event[] = [
   { id: 1, date: new Date(2021, 4, 4, 17, 23, 42, 11), title: 'Designing Beautiful Interfaces' },
@@ -8,7 +8,8 @@ const events: Event[] = [
 ]
 
 const EventsPage = () => (
-  <Layout title="Events | Next.js + TypeScript Example">
+  // <Layout title="Events | Next.js + TypeScript Example">
+  <>
     <div className="max-w-md bg-white mx-auto px-16 py-12 rounded-xl">
       <h2 className="font-bold text-xl mb-10">Event this week</h2>
       <ul className="mb-10">
@@ -28,7 +29,8 @@ const EventsPage = () => (
         View All Events
         </button>
     </div>
-  </Layout>
+  </>
+  // </Layout>
 )
 
 export default EventsPage

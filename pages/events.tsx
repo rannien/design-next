@@ -12,11 +12,11 @@ const EventsPage = () => (
       <h2 className="font-bold text-xl mb-10">Event this week</h2>
       <ul className="mb-10">
         {events.map((event) => (
-          <li className="font-medium text-gray-500" key={event.id}>
+          <li className="font-medium" key={event.id}>
             <div>
-              <strong>{event.title}</strong>
+              <strong className="text-gray-600">{event.title}</strong>
             </div>
-            <div>
+            <div className="text-xs text-gray-500">
               {event.date.toDateString()}
             </div>
             <hr className="my-4" />

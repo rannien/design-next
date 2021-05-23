@@ -1,4 +1,3 @@
-import Layout from '../components/Layout'
 import { Event } from '../interfaces/event'
 
 const events: Event[] = [

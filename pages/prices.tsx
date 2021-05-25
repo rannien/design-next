@@ -1,5 +1,3 @@
-import { spawn } from 'child_process'
-import { count } from 'console'
 import { Price } from '../interfaces/price'
 // import Layout from '../components/Layout'
 

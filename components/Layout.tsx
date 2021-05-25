@@ -14,6 +14,7 @@ const menuItems: MenuItem[] = [
   { url: '/about', name: 'About' },
   { url: '/events', name: 'Events' },
   { url: '/prices', name: 'Prices' },
+  { url: '/subscribe', name: 'Subscribe' },
 ]
 
 const currentDate: Date = new Date;

@@ -1,4 +1,4 @@
-import { Subscription } from "../interfaces/subscription"
+import { Subscription } from '../interfaces/subscription'
 
 const subscriptions: Subscription[] = [
   { id: 1, title: 'Daily News', description: 'Biggest news for today.' },

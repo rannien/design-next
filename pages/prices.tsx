@@ -1,5 +1,4 @@
 import { Price } from '../interfaces/price'
-// import Layout from '../components/Layout'
 
 const prices: Price[] = [
   {
@@ -39,7 +38,6 @@ const prices: Price[] = [
 ]
 
 const PricesPage = () => (
-  // <Layout title="Events | Next.js + TypeScript Example">
   <>
     <h2 className="font-bold text-xl mb-10">Prices</h2>
 
@@ -88,7 +86,6 @@ const PricesPage = () => (
       ))}
     </div>
   </>
-  // </Layout>
 )
 
 export default PricesPage

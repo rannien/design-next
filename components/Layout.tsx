@@ -13,6 +13,7 @@ const menuItems: MenuItem[] = [
   { url: '/', name: 'Home' },
   { url: '/about', name: 'About' },
   { url: '/events', name: 'Events' },
+  { url: '/prices', name: 'Prices' },
 ]
 
 const currentDate: Date = new Date;

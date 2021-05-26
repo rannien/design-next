@@ -1,5 +1,6 @@
-export type Subscription = {
+export type Collection = {
   id: number
   title: string
+  icon: string
   description: string
 }

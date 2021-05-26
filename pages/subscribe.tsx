@@ -15,7 +15,7 @@ const SubscribePage = () => (
       <h2 className="font-bold text-xl mb-10">Sign Up for Newsletters</h2>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 sm:gap-3 mb-8 justify-items-stretch">
         {subscriptions.map((subscription) => (
-          <div className="p-4 max-w-xs bg-white rounded-xl shadow-md h-28 flex" key={subscription.id}>
+          <div className="p-4 bg-white rounded-xl shadow-md h-28 flex" key={subscription.id}>
             <label className="flex items-center space-x-3 cursor-pointer">
               <input type="checkbox" name="" value="1" className="form-tick appearance-none h-6 w-6 border border-gray-300 rounded-md focus:ring-purple-600 checked:bg-purple-600 hover:text-purple-800 focus:text-purple-600 checked:border-transparent focus:outline-none" />
               <span className="text-gray-900 font-medium">

@@ -11,11 +11,11 @@ type Props = {
 
 const menuItems: MenuItem[] = [
   { url: '/', name: 'Home' },
-  { url: '/about', name: 'About' },
   { url: '/events', name: 'Events' },
   { url: '/prices', name: 'Prices' },
   { url: '/subscribe', name: 'Subscribe' },
   { url: '/collection', name: 'Collection' },
+  { url: '/details', name: 'Details' },
 ]
 
 const currentDate: Date = new Date;
